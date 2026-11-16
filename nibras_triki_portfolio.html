@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101411">
+<meta name="description" content="Nibras Triki — Computer Science and Business Computing graduate building software, data and AI solutions.">
+<title>Nibras Triki — Software, Data & AI</title>
+<style>
+:root{--bg:#101411;--panel:#171e19;--panel2:#1d2720;--text:#f2f4ed;--muted:#aab5aa;--line:#2b382e;--lime:#c4f06b;--lime2:#9bc94b;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}a:hover{color:var(--lime)}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-weight:800;letter-spacing:-.04em;font-size:1.08rem}.brand span{color:var(--lime)}.navlinks{display:flex;gap:27px;color:var(--muted);font-size:.9rem}.navlinks a:hover{color:var(--lime)}
+.hero{padding:100px 0 88px;display:grid;grid-template-columns:1.3fr .7fr;gap:54px;align-items:center}.eyebrow{color:var(--lime);font-size:.78rem;text-transform:uppercase;letter-spacing:.18em;font-weight:800}.hero h1{font-size:clamp(3.2rem,7vw,6.6rem);line-height:.98;letter-spacing:-.075em;margin:18px 0 24px}.hero h1 em{font-style:normal;color:var(--lime)}.intro{max-width:650px;color:var(--muted);font-size:1.12rem}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:7px;font-weight:750;font-size:.92rem;border:1px solid var(--line)}.btn.primary{background:var(--lime);color:#172012;border-color:var(--lime)}.btn.primary:hover{background:#d4fa8c;color:#172012}.hero-card{background:linear-gradient(145deg,#202b22,#151b17);border:1px solid var(--line);border-radius:18px;padding:27px;position:relative;overflow:hidden}.hero-card:after{content:"";position:absolute;width:190px;height:190px;border-radius:50%;background:var(--lime);filter:blur(90px);opacity:.12;right:-50px;top:-55px}.monogram{font-size:5rem;font-weight:850;letter-spacing:-.1em;color:var(--lime);line-height:1}.hero-card p{color:var(--muted);margin:14px 0 0}.statrow{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:28px}.stat{background:#111813;border:1px solid var(--line);padding:14px;border-radius:10px}.stat strong{display:block;font-size:1.45rem;color:var(--lime)}.stat small{color:var(--muted)}
+section{padding:76px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}.kicker{color:var(--lime);font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800}.section-head h2{font-size:clamp(2rem,4vw,3.1rem);letter-spacing:-.06em;line-height:1.05;margin:8px 0 0}.section-note{color:var(--muted);max-width:390px;font-size:.93rem}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:24px}.card h3{margin:4px 0 8px;font-size:1.2rem;letter-spacing:-.025em}.card p{color:var(--muted);margin:0}.meta{color:var(--lime);font-size:.76rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}.tag{font-size:.77rem;color:#d8e0d5;border:1px solid #354337;border-radius:5px;padding:5px 9px}.project{display:flex;flex-direction:column;min-height:245px}.project .project-link{margin-top:auto;padding-top:20px;color:var(--lime);font-size:.9rem;font-weight:750}
+.timeline{display:grid;gap:14px}.timeline-item{display:grid;grid-template-columns:180px 1fr;gap:25px;padding:22px 0;border-bottom:1px solid var(--line)}.date{color:var(--lime);font-size:.82rem;font-weight:750}.timeline-item h3{margin:0 0 4px}.timeline-item .sub{color:var(--muted);font-size:.9rem;margin-bottom:9px}.timeline-item p{margin:0;color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skillbox h3{font-size:1rem;margin:0 0 13px}.skillbox p{color:var(--muted);font-size:.9rem;margin:0}
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:15px}.edu .card{min-height:210px}.edu .result{color:var(--lime);font-weight:800;margin-top:14px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:35px}.about p{color:var(--muted);margin-top:0}.language-list{display:flex;flex-wrap:wrap;gap:10px}.language-list span{padding:9px 12px;background:var(--panel2);border:1px solid var(--line);border-radius:7px;font-size:.88rem}
+.contact{background:var(--lime);color:#182014;border-radius:16px;padding:40px;display:flex;align-items:center;justify-content:space-between;gap:24px}.contact h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.06em;line-height:1.05;margin:0 0 10px}.contact p{margin:0;color:#3c4c2d}.contact .btn{border-color:#182014;color:#182014}.contact .btn:hover{background:#182014;color:var(--lime)}
+footer{padding:28px 0;color:var(--muted);font-size:.82rem;display:flex;justify-content:space-between;gap:15px}
+@media(max-width:760px){.navlinks{gap:13px;font-size:.78rem}.hero{grid-template-columns:1fr;padding:72px 0}.hero-card{max-width:480px}.grid,.edu,.about{grid-template-columns:1fr}.skills{grid-template-columns:repeat(2,1fr)}.timeline-item{grid-template-columns:1fr;gap:5px}.section-head{display:block}.section-note{margin-top:12px}.contact{display:block;padding:28px}.contact .btn{margin-top:22px}}
+@media(max-width:430px){.wrap{width:min(var(--max),calc(100% - 30px))}.navlinks a:nth-child(2){display:none}.skills{grid-template-columns:1fr}.hero h1{font-size:3.4rem}footer{display:block}footer span{display:block;margin-top:5px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+<nav aria-label="Main navigation">
+<a class="brand" href="#top">NIBRAS<span>.</span></a>
+<div class="navlinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+</nav>
+</header>
+<main id="top">
+<div class="wrap hero">
+<div>
+<div class="eyebrow">Computer Science · Business Computing · AI</div>
+<h1>Building useful<br><em>digital things.</em></h1>
+<p class="intro">I'm Nibras Triki, a Computer Science and Business Computing graduate interested in software engineering, data and applied AI. I enjoy turning ideas into practical digital products, from web platforms to machine-learning experiments.</p>
+<div class="actions"><a class="btn primary" href="#projects">Explore my work ↘</a><a class="btn" href="mailto:nebrastriki@gmail.com">Get in touch ↗</a></div>
+</div>
+<aside class="hero-card">
+<div class="monogram">NT.</div>
+<p>Based in Sfax, Tunisia · Open to opportunities in software, data and AI.</p>
+<div class="statrow">
+<div class="stat"><strong>2</strong><small>Bachelor's degrees</small></div>
+<div class="stat"><strong>17/20</strong><small>Graduation project</small></div>
+<div class="stat"><strong>87%</strong><small>FashionMNIST validation accuracy</small></div>
+<div class="stat"><strong>3</strong><small>Languages</small></div>
+</div>
+</aside>
+</div>
+
+<section id="about"><div class="wrap">
+<div class="section-head"><div><div class="kicker">01 / About</div><h2>A mix of technology<br>and business thinking.</h2></div><p class="section-note">A multidisciplinary foundation across computing, information systems, software development and introductory machine learning.</p></div>
+<div class="about">
+<div><p>I hold a Bachelor's degree in Business Computing, majoring in Business Information Systems, from the University of Sfax, alongside a Bachelor's degree in Computer Science from Le Mans Université, earned through a double-diploma pathway.</p><p>My academic background spans algorithms, data structures, databases, statistics, software engineering, information systems and AI fundamentals. I have also explored agentic AI product development and built a neural-network classifier as a personal learning project.</p></div>
+<div><div class="meta">Languages</div><div class="language-list" style="margin:12px 0 24px"><span>Arabic · Native</span><span>French · C1 listening/reading</span><span>English · C1 listening</span></div><div class="meta">Highlights</div><div class="tags"><span class="tag">15.44/20 third-year average</span><span class="tag">Ranked 13th</span><span class="tag">Cisco Data Science Essentials</span><span class="tag">AWS Cloud Clubs member</span></div></div>
+</div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<div class="section-head"><div><div class="kicker">02 / Selected work</div><h2>Projects & practice.</h2></div><p class="section-note">A selection of academic and personal work. More implementation details and screenshots can be added as the portfolio evolves.</p></div>
+<div class="grid">
+<article class="card project"><div class="meta">Final-year project · Feb–Apr 2026</div><h3>Servici — Home-services platform</h3><p>Designed and developed a web platform connecting clients with home-service providers in Tunisia as an individual graduation project, with company and university supervision.</p><div class="tags"><span class="tag">Web platform</span><span class="tag">Product development</span><span class="tag">Tunisia</span></div><div class="project-link">Graduation project · 17/20</div></article>
+<article class="card project"><div class="meta">Personal project · June 2026</div><h3>FashionClassifier</h3><p>Built and trained a fully connected neural network in PyTorch to classify FashionMNIST images. Used an 80/20 train-validation split over five epochs and visualised model predictions.</p><div class="tags"><span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">Deep Learning</span><span class="tag">FashionMNIST</span></div><a class="project-link" href="https://github.com/nebras21/FashionMNIST" target="_blank" rel="noopener noreferrer">View source code on GitHub ↗</a></article>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<div class="section-head"><div><div class="kicker">03 / Experience</div><h2>Where I've learned<br>by doing.</h2></div></div>
+<div class="timeline">
+<div class="timeline-item"><div class="date">Feb – Apr 2026</div><div><h3>Software Development Intern · Taicir Digital Solutions & Services</h3><div class="sub">Sfax, Tunisia · End-of-studies project</div><p>Completed an individual graduation project: designed and developed Servici, a web platform connecting clients and home-service providers in Tunisia. Evaluated at 17/20.</p></div></div>
+<div class="timeline-item"><div class="date">Jun – Sep 2025</div><div><h3>AI Agents Intern · Qarnit Consulting LLC</h3><div class="sub">Remote · Company based in Beverly, Massachusetts, USA</div><p>Introduced to agentic AI systems and the fundamentals of designing and developing AI agents as part of product development.</p></div></div>
+<div class="timeline-item"><div class="date">Aug 2025 – Present</div><div><h3>French Language Tutor · Self-employed</h3><div class="sub">Sfax, Tunisia</div><p>Teach French to primary and middle-school students, covering written expression, grammar and reading comprehension; support homework and school assessment preparation.</p></div></div>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<div class="section-head"><div><div class="kicker">04 / Toolkit</div><h2>Technical skills.</h2></div><p class="section-note">Grouped from the skills listed in my CV. Familiarity varies by tool and technology.</p></div>
+<div class="skills">
+<div class="card skillbox"><h3>Programming</h3><p>Python, Java, JavaScript, TypeScript, C, C#, PHP, HTML, CSS, JSON, XML</p></div>
+<div class="card skillbox"><h3>Web & frameworks</h3><p>React, Next.js, Node.js, Spring (Boot, MVC, Data, Security), .NET, Laravel, Django, Angular, REST APIs</p></div>
+<div class="card skillbox"><h3>Databases</h3><p>SQL, PostgreSQL, MySQL, PL/SQL, Prisma, relational databases, ORM, database design</p></div>
+<div class="card skillbox"><h3>Data & AI</h3><p>Machine learning fundamentals, PyTorch, NumPy, Pandas, scikit-learn, Matplotlib</p></div>
+<div class="card skillbox"><h3>Tools & methods</h3><p>Git, GitHub, Postman, UML, Agile/Scrum, API testing</p></div>
+<div class="card skillbox"><h3>Foundations</h3><p>Algorithms, data structures, object-oriented programming, statistics, software engineering</p></div>
+</div>
+</div></section>
+
+<section id="education"><div class="wrap">
+<div class="section-head"><div><div class="kicker">05 / Education</div><h2>Academic foundation.</h2></div></div>
+<div class="edu">
+<div class="card"><div class="meta">2023 – 2026 · Sfax, Tunisia</div><h3>Bachelor's Degree in Business Computing</h3><p>Major in Business Information Systems · Faculty of Economic Sciences and Management of Sfax (FSEGS), University of Sfax.</p><div class="result">15.44/20 · Ranked 13th in graduating cohort</div></div>
+<div class="card"><div class="meta">2026 · Le Mans, France</div><h3>Bachelor's Degree in Science, Technology and Health</h3><p>Major in Computer Science · Le Mans Université. Awarded under a double-diploma convention with FSEGS.</p><div class="result">180 ECTS</div></div>
+</div>
+</div></section>
+
+<section id="community"><div class="wrap">
+<div class="section-head"><div><div class="kicker">06 / Beyond coursework</div><h2>Community & learning.</h2></div></div>
+<div class="grid">
+<div class="card"><div class="meta">Certification · Oct 2026</div><h3>Data Science Essentials with Python</h3><p>Cisco Networking Academy.</p></div>
+<div class="card"><div class="meta">Oct 2025 – Jan 2026</div><h3>AWS Cloud Clubs ISIMS</h3><p>Member.</p></div>
+<div class="card"><div class="meta">Oct – Dec 2023</div><h3>Microsoft Tech Club FSEGS</h3><p>Member / Sponsoring Assistant.</p></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<div class="contact"><div><h2>Have a project<br>or opportunity?</h2><p>I'd be glad to connect and talk about how I can contribute.</p></div><a class="btn" href="mailto:nebrastriki@gmail.com">nebrastriki@gmail.com ↗</a></div>
+</div></section>
+</main>
+<footer class="wrap"><span>© <span id="year">2026</span> Nibras Triki</span><span>Designed & built as a personal portfolio · <a href="https://github.com/nebras21" target="_blank" rel="noopener noreferrer">GitHub ↗</a></span></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
